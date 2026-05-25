@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { notFound } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, ExternalLink, Github, CheckCircle2, FileCode } from "lucide-react"
+import { ArrowLeft, ExternalLink, Github, CheckCircle2, FileCode, CircleHelp, Briefcase } from "lucide-react"
 import { projects } from "@/components/sections/projects-section"
 import { ProjectCarousel } from "@/components/project-carousel"
 
@@ -28,6 +28,8 @@ const techLogos: Record<string, string> = {
 const projectDetails: Record<string, {
   subtitle: string
   longDescription: string
+  problem: string
+  participation: string
   features: string[]
   screenshots: string[]
   links: {
@@ -44,6 +46,12 @@ const projectDetails: Record<string, {
 
     longDescription:
       "Plataforma web full stack desarrollada para centralizar procesos administrativos, financieros y documentales de la organización. El sistema cuenta con una web pública orientada a la comunidad para mostrar proyectos, información institucional y canales de contacto, además de un panel administrativo privado para la gestión de usuarios, proveedores, proyectos, archivos y documentos financieros. Incluye autenticación por roles, generación automática de comprobantes PDF, almacenamiento en la nube y sincronización en tiempo real. Fue desarrollado con Next.js, JavaScript, Tailwind CSS y Supabase bajo una arquitectura serverless desplegada en Vercel. Puedes ver la web pública: ",
+
+    problem:
+      "La organización necesitaba centralizar múltiples procesos administrativos, financieros y documentales que anteriormente se gestionaban de forma dispersa. La plataforma permite administrar información institucional, proyectos, usuarios, proveedores y documentos desde un único sistema, optimizando la organización interna y facilitando el acceso público a la información de la corporación mediante una web institucional conectada en tiempo real con el panel administrativo.",
+
+    participation:
+      "Desarrollé el proyecto de forma independiente, encargándose del diseño de interfaz, arquitectura de la aplicación, modelado de base de datos, desarrollo frontend y backend, autenticación y control de roles, integración con Supabase, generación de documentos PDF, almacenamiento en la nube y despliegue en producción con Vercel. También diseñé la estructura responsive y la sincronización en tiempo real entre el panel administrativo y la web pública.",
 
     features: [
       "Web pública institucional para visualización de proyectos e información de la organización",
@@ -91,6 +99,10 @@ const projectDetails: Record<string, {
   "gestion-empresarial": {
     subtitle: "Plataforma web de gestion de procesos empresariales para AUMAL",
     longDescription: "plataforma web desarrollada para la gestión de mantenimientos empresariales. La aplicación permite registrar, consultar, editar y organizar información relacionada con mantenimientos realizados a diferentes empresas, manejando usuarios con distintos permisos y acceso controlado a la información. El sistema fue desarrollado utilizando HTML, CSS y JavaScript para el frontend, mientras que Firebase fue utilizado como backend y servicio principal para autenticación, almacenamiento y base de datos. El objetivo principal del proyecto fue centralizar la información de mantenimientos en una plataforma web segura, organizada y accesible desde cualquier lugar.",
+    problem:
+      "La empresa AUMAL carecía de un sistema centralizado para gestionar, registrar y dar seguimiento a los mantenimientos empresariales y procesos de facturación, lo que dificultaba la coordinación y el control de calidad. Esta plataforma unifica la administración de clientes, reportes de inspección y control administrativo de pagos en una solución segura y accesible en la nube, garantizando que el personal técnico e inspectores cuenten con sincronización en tiempo real desde cualquier dispositivo.",
+    participation:
+      "Lideré el desarrollo del sistema implementando una arquitectura serverless con Firebase. Diseñé e implementé la interfaz frontend utilizando HTML5, CSS3 y JavaScript vanilla, conectándola en tiempo real con Cloud Firestore. Desarrollé el control de acceso y roles con Firebase Auth, el almacenamiento de evidencias fotográficas en Firebase Storage, y programé módulos para la generación de reportes detallados en PDF y Excel, asegurando una experiencia completamente responsive y de alto rendimiento.",
     features: [
       "Autenticación de usuarios y gestión de roles con Firebase Auth",
       "Gestión completa de mantenimientos: creación, edición, seguimiento y estados",
@@ -266,8 +278,49 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
       </section>
 
+      {/* Problem & Role Section */}
+      <section className="py-16 bg-card border-b border-border">
+        <div className="container mx-auto px-8 md:px-12 lg:px-20">
+          <div className="grid gap-8 md:grid-cols-2">
+            {/* Problem column */}
+            <div className="p-6 md:p-8 bg-background border border-border/60 rounded-xl hover:border-primary/30 transition-all duration-300 shadow-sm flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-primary/10 text-primary rounded-lg">
+                    <CircleHelp className="h-5 w-5" />
+                  </div>
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground">
+                    Problemática que resuelve
+                  </h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                  {details.problem}
+                </p>
+              </div>
+            </div>
+
+            {/* Participation column */}
+            <div className="p-6 md:p-8 bg-background border border-border/60 rounded-xl hover:border-primary/30 transition-all duration-300 shadow-sm flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-primary/10 text-primary rounded-lg">
+                    <Briefcase className="h-5 w-5" />
+                  </div>
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground">
+                    Mi participación
+                  </h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                  {details.participation}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
-      <section className="py-16 bg-card">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-8 md:px-12 lg:px-20">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-10">
             Funcionalidades principales

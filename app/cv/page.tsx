@@ -11,18 +11,34 @@ const experience = [
     title: "Plataforma web para la Corporación por la Cultura y el Deporte",
     company: "Desarrollo independiente",
     period: "2025",
-    description: "Diseño y desarrollo de una aplicación web fullstack para la gestión de información corporativa y automatización de procesos.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Vercel"],
+    description: "Plataforma web Full Stack para centralizar la gestión de información corporativa, control administrativo y automatización de flujos de trabajo de la organización, integrando un portal público institucional con un panel de control privado.",
     achievements: [
-      "Este proyecto consiste en una plataforma web integrada para la difusión y gestión administrativa en la Corporación por la Cultura y el Deporte. La aplicación permite registrar, consultar, editar y organizar información relacionada con proveedores, proyectos internos, mensajes de la comunidad y documentos financieros de ingresos y egresos , manejando usuarios con distintos permisos y acceso controlado a la información según su rol. El sistema fue desarrollado utilizando Next.js y Tailwind CSS para el frontend , mientras que Supabase fue utilizado como backend y servicio principal para autenticación (Supabase Auth), almacenamiento (Supabase Storage) y base de datos (PostgreSQL). El objetivo principal del proyecto fue centralizar la información institucional y administrativa en una plataforma web segura, organizada y accesible, optimizando los procesos financieros internos y fortaleciendo el impacto social de la organización"
+      "Diseñé y desarrollé la arquitectura completa utilizando Next.js, React, TypeScript y Tailwind CSS.",
+      "Implementé el despliegue continuo y la configuración en producción a través de Vercel.",
+      "Desarrollé un panel administrativo privado con operaciones CRUD completas y flujos de búsqueda avanzados.",
+      "Diseñé y estructuré la base de datos relacional utilizando Supabase.",
+      "Implementé la sincronización de datos en tiempo real entre la web pública y el panel privado.",
+      "Integré un flujo seguro de autenticación de usuarios con control de acceso basado en roles (RBAC).",
+      "Programé la lógica para cálculo automático de valores contables y generación automática de comprobantes PDF.",
+      "Estructuré el almacenamiento de documentos e imágenes en la nube utilizando Supabase Storage."
     ]
   },
   {
-    title: "Plataforma web de gestion de procesos empresariales para AUMAL",
+    title: "Plataforma web de gestión de procesos empresariales para AUMAL",
     company: "Desarrollo independiente",
     period: "2024",
-    description: "Desarrollo de un sistema administrativo e integral enfocado en la gestión de datos en tiempo real y arquitectura serverless.",
+    technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
+    description: "Sistema de administración y reportes técnicos en la nube para centralizar y realizar el seguimiento en tiempo real del historial de mantenimientos correctivos y preventivos de múltiples empresas aliadas.",
     achievements: [
-      "Este proyecto consiste en una plataforma web desarrollada para la gestión de mantenimientos empresariales. La aplicación permite registrar, consultar, editar y organizar información relacionada con mantenimientos realizados a diferentes empresas, manejando usuarios con distintos permisos y acceso controlado a la información. El sistema fue desarrollado utilizando HTML, CSS y JavaScript para el frontend, mientras que Firebase fue utilizado como backend y servicio principal para autenticación, almacenamiento y base de datos. El objetivo principal del proyecto fue centralizar la información de mantenimientos en una plataforma web segura, organizada y accesible desde cualquier lugar."
+      "Diseñé e implementé la arquitectura de la aplicación en un entorno serverless con Firebase.",
+      "Desarrollé una interfaz responsive, ágil y de alto rendimiento utilizando HTML, CSS y JavaScript moderno.",
+      "Modelé la base de datos no relacional utilizando Cloud Firestore.",
+      "Programé la sincronización en tiempo real de registros, órdenes de trabajo e inspecciones de calidad.",
+      "Configuré el flujo de registro e inicio de sesión seguro utilizando Firebase Auth.",
+      "Implementé permisos y roles específicos para la gestión granular de técnicos, inspectores y clientes.",
+      "Programé la automatización de facturas y la exportación de reportes de servicio técnico a formatos PDF y Excel.",
+      "Integré la carga y el almacenamiento de evidencias fotográficas en la nube utilizando Firebase Storage."
     ]
   }
 ]
@@ -42,15 +58,15 @@ const education = [
 ]
 
 const technicalSkills = [
-  { label: "Frontend", items: ["HTML", "CSS", "Tailwind CSS", "Next.js"] },
-  { label: "Backend & Bases de Datos", items: ["Firebase", "Supabase", "SQL", "APIs REST", "Autenticación y control de roles"] },
-  { label: "Lenguajes", items: ["JavaScript", "Java", "Python", "Typescript"] },
-  { label: "Herramientas", items: ["GitHub", "Scrum", "IA Generativa"] },
+  { label: "Frontend & Diseño", items: ["Next.js", "React", "Tailwind CSS", "HTML", "CSS"] },
+  { label: "Backend & Bases de Datos", items: ["Supabase", "Firebase", "SQL", "PostgreSQL", "APIs REST", "Autenticación (RBAC)"] },
+  { label: "Lenguajes de Programación", items: ["JavaScript", "TypeScript", "Python", "Java"] },
+  { label: "Despliegue & Herramientas", items: ["Git & GitHub", "Vercel", "Scrum", "IA Generativa"] },
 ]
 
 const complementarySkills = [
-  { label: "Conocimientos Complementarios", items: ["Redes y Soporte TI", "Ciberseguridad básica", "Modelado de datos"] },
-  { label: "Habilidades Blandas", items: ["Aprendizaje rápido", "Organización", "Atención al detalle", "Pensamiento analítico", "Trabajo en equipo"] },
+  { label: "Enfoque y Especialidad", items: ["Modelado de Datos", "Fundamentos de ciberseguridad", "Redes y Soporte TI"] },
+  { label: "Competencias Profesionales", items: ["Resolución de problemas técnicos", "Autonomía en el desarrollo", "Pensamiento analítico", "Colaboración técnica"] },
 ]
 
 const certifications = [
@@ -94,12 +110,7 @@ export default function CVPage() {
             </h2>
           </div>
           <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-            Ingeniera de Sistemas con conocimientos en desarrollo web, bases de datos, ciberseguridad, redes y
-            metodologías ágiles. He aplicado estos conocimientos en proyectos independientes reales, desarrollando
-            soluciones completas desde el diseño hasta el despliegue en producción. Me caracterizo por ser organizada,
-            autodidacta y con fuerte orientación al detalle. Estoy en búsqueda de mi primera experiencia profesional para
-            aportar desde el área de sistemas y continuar creciendo en un entorno tecnológico dinámico.
-          </p>
+            <strong>Ingeniera de Sistemas</strong> enfocada en el desarrollo de aplicaciones web <strong>Full Stack</strong>y soluciones digitales orientadas a la optimización de procesos. Cuento con experiencia práctica desarrollando plataformas completas de forma independiente, participando en etapas como análisis, diseño, arquitectura, implementación y despliegue. Me caracterizo por la capacidad de adaptar soluciones a necesidades reales, estructurar sistemas funcionales y mantener una visión integral entre la experiencia de usuario y la lógica de negocio. Destaco por el aprendizaje continuo, el pensamiento analítico y la autonomía para abordar proyectos tecnológicos de manera organizada y eficiente.          </p>
         </div>
       </section>
 
@@ -126,7 +137,17 @@ export default function CVPage() {
                   <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-2 leading-tight">
                     {job.title}
                   </h3>
-                  <p className="font-medium text-muted-foreground">{job.company}</p>
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                    <p className="font-medium text-muted-foreground">{job.company}</p>
+                    <span className="hidden sm:inline text-muted-foreground/30 text-xs">•</span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {job.technologies.map((tech) => (
+                        <span key={tech} className="px-2 py-0.5 bg-primary/10 text-primary text-xs font-semibold rounded-sm">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
                 <div className="flex-grow">
                   <p className="text-foreground mb-5 leading-relaxed font-medium">

@@ -1,9 +1,9 @@
-import { 
-  Shield, 
-  Activity, 
-  Users, 
-  Network, 
-  Sparkles 
+import {
+  Shield,
+  Activity,
+  Users,
+  Network,
+  Sparkles
 } from "lucide-react"
 
 const coreSkills = [
@@ -36,14 +36,11 @@ export function AboutSection() {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed text-base md:text-lg">
               <p>
-                Soy Ingeniera de Sistemas graduada con Grado de Honor, enfocada en el desarrollo web Full Stack. Tengo experiencia creando aplicaciones completas de forma independiente, liderando todo el ciclo de vida del proyecto: desde el diseño conceptual y la arquitectura de bases de datos, hasta su despliegue en producción. Mi stack principal incluye JavaScript, Next.js, SQL, Supabase y Firebase, complementado con un sólido manejo de Python y Java.
-              </p>
+                Soy Ingeniera de Sistemas graduada con Grado de Honor, enfocada en el desarrollo web Full Stack. He desarrollado aplicaciones web de forma independiente, participando en todas las etapas del proceso: desde el diseño y la estructura de la base de datos hasta la implementación y despliegue en producción. Trabajo principalmente con JavaScript, Next.js, SQL, Supabase y Firebase, y complemento mi perfil con conocimientos en Python y Java.              </p>
               <p>
-                Mi formación también me ha brindado conocimientos en ciberseguridad, redes, metodologías ágiles e IA generativa, lo que me permite desarrollar soluciones con una visión más integral, aplicando buenas prácticas de seguridad, trabajo colaborativo y uso eficiente de herramientas modernas.
-              </p>
+                Además de mi enfoque en desarrollo, cuento con bases en ciberseguridad, redes, metodologías ágiles e IA generativa, lo que me permite abordar los proyectos con una visión más integral y adaptarme fácilmente a distintas necesidades técnicas              </p>
               <p>
-                Me apasiona el aprendizaje continuo y destaco por mi pensamiento analítico y atención al detalle, cualidades que me permiten adaptarme y aportar valor en entornos tecnológicos dinámicos.
-              </p>
+                Me caracterizo por el aprendizaje continuo, la capacidad de análisis y la atención al detalle, cualidades que aplico para crear soluciones funcionales, bien estructuradas y orientadas a la experiencia del usuario.              </p>
             </div>
           </div>
 
@@ -60,9 +57,9 @@ export function AboutSection() {
                     className="p-2.5 bg-background border border-border hover:border-primary/50 transition-all duration-300 rounded flex items-center gap-2.5 animate-fade-in"
                   >
                     <div className="p-1 bg-muted/40 rounded flex items-center justify-center shrink-0 w-8 h-8">
-                      <img 
-                        src={skill.logoUrl} 
-                        alt={`${skill.label} logo`} 
+                      <img
+                        src={skill.logoUrl}
+                        alt={`${skill.label} logo`}
                         className="h-5 w-5 object-contain shrink-0"
                       />
                     </div>
