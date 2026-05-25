@@ -20,7 +20,7 @@ export function Navbar() {
       <nav className="container mx-auto px-8 md:px-12 lg:px-20 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="font-serif text-2xl md:text-3xl font-bold text-primary">
-            Portfolio - Estefanía Lozano
+            Portfolio | Estefanía Lozano
           </Link>
 
           {/* Desktop Navigation */}

@@ -33,11 +33,20 @@ export function HeroSection() {
           </div>
 
           <div className="relative aspect-square md:aspect-[4/3] w-full max-w-md mx-auto lg:max-w-none">
+            {/* Light mode image */}
             <Image
               src="/hero-img.png"
               alt="Estefanía Lozano"
               fill
-              className="object-contain"
+              className="object-contain transition-opacity duration-500 dark:opacity-0"
+              priority
+            />
+            {/* Dark mode image */}
+            <Image
+              src="/hero-img-alt.png"
+              alt="Estefanía Lozano"
+              fill
+              className="object-contain transition-opacity duration-500 opacity-0 dark:opacity-100"
               priority
             />
           </div>

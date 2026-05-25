@@ -171,7 +171,15 @@ export function ContactSection() {
               </div>
               <div>
                 <p className="font-medium text-foreground">GitHub</p>
-                <span className="text-muted-foreground">Próximamente...</span>
+                <a
+                  href="https://github.com/estefania158"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors line-clamp-1"
+                  title="github.com/estefania158"
+                >
+                  estefania158
+                </a>
               </div>
             </div>
 

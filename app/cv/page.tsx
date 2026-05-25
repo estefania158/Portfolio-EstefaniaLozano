@@ -16,7 +16,7 @@ const experience = [
     achievements: [
       "Diseñé y desarrollé la arquitectura completa utilizando Next.js, React, TypeScript y Tailwind CSS.",
       "Implementé el despliegue continuo y la configuración en producción a través de Vercel.",
-      "Desarrollé un panel administrativo privado con operaciones CRUD completas y flujos de búsqueda avanzados.",
+      "Desarrollé un panel administrativo modular con múltiples secciones interrelacionadas, operaciones CRUD completas y flujos de búsqueda avanzados.",
       "Diseñé y estructuré la base de datos relacional utilizando Supabase.",
       "Implementé la sincronización de datos en tiempo real entre la web pública y el panel privado.",
       "Integré un flujo seguro de autenticación de usuarios con control de acceso basado en roles (RBAC).",
@@ -58,18 +58,70 @@ const education = [
 ]
 
 const technicalSkills = [
-  { label: "Frontend & Diseño", items: ["Next.js", "React", "Tailwind CSS", "HTML", "CSS"] },
-  { label: "Backend & Bases de Datos", items: ["Supabase", "Firebase", "SQL", "PostgreSQL", "APIs REST", "Autenticación (RBAC)"] },
-  { label: "Lenguajes de Programación", items: ["JavaScript", "TypeScript", "Python", "Java"] },
-  { label: "Despliegue & Herramientas", items: ["Git & GitHub", "Vercel", "Scrum", "IA Generativa"] },
+  {
+    label: "Frontend",
+    items: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
+    label: "Backend & Bases de Datos",
+    items: [
+      "Firebase",
+      "Supabase",
+      "SQL",
+      "PostgreSQL",
+      "Autenticación y Roles",
+    ],
+  },
+  {
+    label: "Lenguajes",
+    items: [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Java",
+    ],
+  },
+  {
+    label: "Herramientas & Despliegue",
+    items: [
+      "Git",
+      "GitHub",
+      "Vercel",
+      "IA Generativa",
+    ],
+  },
 ]
 
 const complementarySkills = [
-  { label: "Enfoque y Especialidad", items: ["Modelado de Datos", "Fundamentos de ciberseguridad", "Redes y Soporte TI"] },
-  { label: "Competencias Profesionales", items: ["Resolución de problemas técnicos", "Autonomía en el desarrollo", "Pensamiento analítico", "Colaboración técnica"] },
+  {
+    label: "Habilidades Profesionales",
+    items: [
+      "Resolución de problemas",
+      "Pensamiento analítico",
+      "Organización y autonomía",
+      "Adaptabilidad",
+      "Colaboración técnica",
+    ],
+  },
+  {
+    label: "Conocimientos Complementarios",
+    items: [
+      "Modelado de datos",
+      "Fundamentos de ciberseguridad",
+      "Redes y soporte TI",
+      "Metodologías ágiles (Scrum)",
+    ],
+  },
 ]
 
 const certifications = [
+  { name: "Generación de códigos de software con inteligencia artificial", issuer: "SENA", year: "2026" },
   { name: "Desarrollo de Aplicaciones con Interfaz Gráfica (Java)", issuer: "SENA", year: "2025" },
   { name: "Aplicación del Marco de Trabajo SCRUM para Software", issuer: "SENA", year: "2025" },
   { name: "Curso de Programación en Java", issuer: "Politécnico de Colombia", year: "2025" },
@@ -110,7 +162,7 @@ export default function CVPage() {
             </h2>
           </div>
           <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-            <strong>Ingeniera de Sistemas</strong> enfocada en el desarrollo de aplicaciones web <strong>Full Stack</strong>y soluciones digitales orientadas a la optimización de procesos. Cuento con experiencia práctica desarrollando plataformas completas de forma independiente, participando en etapas como análisis, diseño, arquitectura, implementación y despliegue. Me caracterizo por la capacidad de adaptar soluciones a necesidades reales, estructurar sistemas funcionales y mantener una visión integral entre la experiencia de usuario y la lógica de negocio. Destaco por el aprendizaje continuo, el pensamiento analítico y la autonomía para abordar proyectos tecnológicos de manera organizada y eficiente.          </p>
+            <strong>Ingeniera de Sistemas</strong> enfocada en el desarrollo de aplicaciones web <strong>Full Stack</strong> y soluciones digitales orientadas a la optimización de procesos. Cuento con experiencia práctica desarrollando plataformas completas de forma independiente, participando en etapas como análisis, diseño, arquitectura, implementación y despliegue. Me caracterizo por la capacidad de adaptar soluciones a necesidades reales, estructurar sistemas funcionales y mantener una visión integral entre la experiencia de usuario y la lógica de negocio. Destaco por el aprendizaje continuo, el pensamiento analítico y la autonomía para abordar proyectos tecnológicos de manera organizada y eficiente.          </p>
         </div>
       </section>
 
