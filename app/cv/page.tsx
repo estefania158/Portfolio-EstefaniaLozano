@@ -140,7 +140,7 @@ export default function CVPage() {
             <h1 className="font-serif text-2xl md:text-3xl font-bold text-white">
               Hoja de Vida
             </h1>
-            <a href="/HV ESTEFANIA LOZANO - SISTEMAS.pdf" download="HV ESTEFANIA LOZANO - SISTEMAS.pdf">
+            <a href="/ESTEFANIA_LOZANO_HV.pdf" download=" ESTEFANIA_LOZANO_HV.pdf">
               <Button className="bg-white text-primary hover:bg-white/90 gap-2 w-fit cursor-pointer">
                 <Download className="h-4 w-4" />
                 Descargar PDF
